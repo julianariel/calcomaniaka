@@ -1,0 +1,22 @@
+{
+  "name": "calcomaniaka",
+  "version": "1.0.0",
+  "description": "Generador de archivo de importacion masiva de productos para la tienda Calcomaniaka.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julianariel/calcomaniaka.git"
+  },
+  "author": "Julian Ariel Martinez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julianariel/calcomaniaka/issues"
+  },
+  "homepage": "https://github.com/julianariel/calcomaniaka#readme",
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  }
+}
