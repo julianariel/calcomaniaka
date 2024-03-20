@@ -23,7 +23,7 @@ const processFolder = (folderPath) => {
         const productName = fileName[1];
         const category = fileName[0];
 
-        if (category === 'VIBES') return;
+        if (category !== 'VIBES') return;
 
         sizes.forEach(size => {
             const price = prices[size];
@@ -33,19 +33,19 @@ const processFolder = (folderPath) => {
                 Stock: '', // O el valor que necesites
                 SKU: '',
                 Precio: price,
-                'Precio Oferta': '',
-                'Nombre Atributo 1': 'Tamaño',
-                'Valor Atributo 1': size,
-                'Nombre Atributo 2': '',
-                'Valor Atributo 2': '',
-                'Nombre Atributo 3': '',
-                'Valor Atributo 3': '',
+                'Precio oferta': '',
+                'Nombre atributo 1': 'Tamaño',
+                'Valor atributo 1': size,
+                'Nombre atributo 2': '',
+                'Valor atributo 2': '',
+                'Nombre atributo 3': '',
+                'Valor atributo 3': '',
                 Categorías: `CALCOS > ${category}`,
                 Peso: '0.5', // Asumiendo que el peso es el mismo para todos
                 Alto: dimensions[0],
                 Ancho: dimensions[1],
                 Profundidad: '1', // Asumiendo que la profundidad es la misma para todos
-                'Mostrar En Tienda': 'Si',
+                'Mostrar en tienda': 'Si',
                 Descripción: ''
                 // Asegúrate de reemplazar esto con la descripción real
             };
